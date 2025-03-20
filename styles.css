@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&display=swap');
+
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+font-family:"IBM Plex Sans Arabic", serif;
+}
+
+
+body {
+
+background-color: #02070e;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 0.srem;
+    max-width: 1200px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.navigation a:hover{
+    color: #123eb9;
+}
+
+hr{
+    opacity: 10%;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+
+.arrow{
+    position: absolute;
+    transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+
+.heroSub{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name{
+    font-size: 3rem;
+    color: white;
+}
+
+.title{
+    font-size: 4rem;
+    color: #00adb5;
+}
+
+.heroBtns{
+    display: flex;
+    gap: 1;
+    margin-top: 1.5rem;
+}
+
+.hireMe{
+    background-color:#00adb5 ;
+    color: white;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5 1.5;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.AboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+
+.textContainr{
+    display: flex;
+    flex-direction: column;
+}
+
+.textTitle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.AboutName{
+    color: #00adb5;
+}
+
+.AboutTitle{
+    color: white;
+}
+
+.AboutMePar{
+    text-align: justify;
+    color: rgba(238, 238, 238, 0.75);
+}
+
+.worksMe{
+    color: #00adb5;
+}
+
+.worksTitle{
+    color: white;
+}
+
+.works{
+    background-image: url(assets/svg/background.svg);
+    padding: 10rem 10rem;
+    margin: 5rem 0rem; 
+}
+
+.worksContainr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:left;
+    margin: 5rem auto;
+    max-width: 1200px; 
+}
+
+.projectTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.works ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.works li{
+    border-radius: 16px;
+    background-color: rgba(2, 10, 22, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem 4rem;
+}
+
+.works li img{
+    width: 100px;
+    height: 100px; 
+    object-fit: contain;
+    transition: transform 0.2s; 
+}
+
+.works li:hover{
+    transform: scale(1.5);
+}
+
+footer{
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+ .my{
+    color: white;
+ }
+
+
+ @media (max-width: 1023px) {
+    header {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .heroimg {
+      width: 400px;
+    }
+    .name,
+    .title {
+      font-size: 2rem;
+    }
+    .arrow {
+      display: none;
+    }
+    .AboutMe {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2rem;
+    }
+    .textContainr {
+      align-items: center;
+      margin: 0rem 5rem;
+      gap: 1rem;
+    }
+    .AboutName,
+    .AboutTitle {
+      font-size: 2rem;
+    }
+    .light {
+      width: 60px;
+    }
+    .AboutMeImg {
+      width: 400px;
+    }
+    .works {
+      padding: 0;
+    }
+    .worksContainr {
+      padding: 5rem 0rem;
+      gap: 3rem;
+    }
+    .projectTitle {
+      margin-left: 1rem;
+    }
+    .works ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contactContainer {
+      margin: 10rem 5rem;
+      gap: 2rem;
+    }
+    .contact {
+      flex-direction: column;
+      gap: 1rem;
+      margin-right: 0;
+    }
+  }
